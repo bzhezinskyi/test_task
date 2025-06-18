@@ -103,6 +103,7 @@ body {
   border-radius: 0.5rem;
   border: 1px solid #2c2929;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .btn:hover, .btn:focus {
   background-color: #2c2929;
@@ -560,4 +561,148 @@ body {
 }
 .delivery__icon {
   margin-right: 0.625rem;
+}
+.descript__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5.625rem;
+}
+.descript__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 64rem) {
+  .descript__title {
+    margin-bottom: 2.625rem;
+    font-size: 2.625rem;
+  }
+}
+.descript__info {
+  margin-bottom: 0.875rem;
+  max-width: 44.375rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 142%;
+}
+.descript__info.hidden {
+  overflow: hidden;
+  max-height: 4.625rem;
+}
+@media (min-width: 48rem) {
+  .descript__info.hidden {
+    max-height: 7.875rem;
+  }
+}
+@media (min-width: 64rem) {
+  .descript__info {
+    margin-bottom: 5.625rem;
+    font-size: 1.25rem;
+  }
+}
+.descript__btn {
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  align-self: end;
+}
+@media (min-width: 48rem) {
+  .descript__btn {
+    display: none;
+  }
+}
+.descript__grup {
+  margin-bottom: 2.5625rem;
+}
+@media (min-width: 90rem) {
+  .descript__grup {
+    display: flex;
+  }
+}
+.descript__list {
+  max-width: 41.9375rem;
+}
+.descript__item {
+  margin-bottom: 2.1875rem;
+}
+@media (min-width: 90rem) {
+  .descript__item {
+    display: flex;
+  }
+  .descript__item:last-child {
+    margin-bottom: 0;
+  }
+}
+.descript__txt {
+  font-size: 1.125rem;
+}
+@media (min-width: 90rem) {
+  .descript__txt {
+    display: block;
+    width: 15.875rem;
+    font-size: 1.3125rem;
+  }
+}
+.descript__txt--light {
+  color: #8c8c8c;
+}
+@media (min-width: 90rem) {
+  .descript__txt--light {
+    width: 26.0625rem;
+    font-size: 1.25rem;
+  }
+}
+.descript__img {
+  min-height: 26.125rem;
+  padding: 1.25rem;
+  margin-bottom: 2.5625rem;
+  border-radius: 0.5rem;
+  background-image: url("../img/descript/descript.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media (min-width: 64rem) {
+  .descript__img {
+    min-height: 38.9375rem;
+    margin-bottom: 5.625rem;
+  }
+}
+.descript__img-txt {
+  display: block;
+  margin-bottom: 1.75rem;
+  font-size: 1.4375rem;
+  font-weight: 400;
+}
+@media (min-width: 64rem) {
+  .descript__img-txt {
+    margin-bottom: 2.1875rem;
+    font-size: 1.25rem;
+  }
+}
+.descript__img-txt--bold {
+  font-weight: 600;
+}
+@media (min-width: 64rem) {
+  .descript__img-txt--bold {
+    font-size: 2rem;
+  }
+}
+.descript__img-btn {
+  border: 1px solid #ffffff;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 18.4375rem;
+}
+@media (min-width: 64rem) {
+  .descript__img-btn {
+    max-width: 14rem;
+  }
 }/*# sourceMappingURL=style.css.map */

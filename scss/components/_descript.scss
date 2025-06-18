@@ -1,0 +1,125 @@
+.descript {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding-top: toRem(90);
+    }
+    &__title {
+        font-size: toRem(28);
+        font-weight: 600;
+        padding-bottom: toRem(40);
+        @media (min-width: $desc-s-min) {
+            margin-bottom: toRem(42);
+            font-size: toRem(42);
+        }
+    }
+    &__info {
+        margin-bottom: toRem(14);
+        max-width: toRem(710);
+        font-size: toRem(18);
+        font-weight: 300;
+        line-height: 142%;
+        &.hidden {
+            overflow: hidden;
+            max-height: toRem(74);
+            @media (min-width: $tab-min) {
+                max-height: toRem(126);
+            }
+        }
+        @media (min-width: $desc-s-min) {
+            margin-bottom: toRem(90);
+            font-size: toRem(20);
+        }
+    }
+    &__btn {
+        margin-bottom: toRem(40);
+        font-size: toRem(16);
+        font-weight: 600;
+        align-self: end;
+        @media (min-width: $tab-min) {
+            display: none;
+        }
+    }
+    &__grup {
+        margin-bottom: toRem(41);
+        @media (min-width: $desc-m-min) {
+            display: flex;
+        }
+    }
+    &__list {
+        max-width: toRem(671);
+    }
+    &__item {
+        margin-bottom: toRem(35);
+        @media (min-width: $desc-m-min) {
+            display: flex;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__txt {
+        font-size: toRem(18);
+        @media (min-width: $desc-m-min) {
+            display: block;
+            width: toRem(254);
+
+            font-size: toRem(21);
+        }
+        &--light {
+            color: $lidht-color;
+
+            @media (min-width: $desc-m-min) {
+                width: toRem(417);
+
+                font-size: toRem(20);
+            }
+        }
+    }
+    &__img {
+        min-height: toRem(418);
+        padding: toRem(20);
+        margin-bottom: toRem(41);
+        border-radius: toRem(8);
+        background-image: url('../img/descript/descript.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        @media (min-width: $desc-s-min) {
+            min-height: toRem(623);
+            margin-bottom: toRem(90);
+        }
+        &-txt {
+            display: block;
+            margin-bottom: toRem(28);
+            font-size: toRem(23);
+            font-weight: 400;
+            @media (min-width: $desc-s-min) {
+                margin-bottom: toRem(35);
+                font-size: toRem(20);
+            }
+            &--bold {
+                @media (min-width: $desc-s-min) {
+                    font-size: toRem(32);
+                }
+                font-weight: 600;
+            }
+        }
+        &-btn {
+            border: 1px solid $secondary-color;
+            border-radius: toRem(4);
+            padding: toRem(16);
+            width: 100%;
+            max-width: toRem(295);
+            @media (min-width: $desc-s-min) {
+                max-width: toRem(224);
+            }
+        }
+    }
+}
