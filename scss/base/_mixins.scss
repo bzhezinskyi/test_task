@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+@function toRem($px, $current: 16) {
+    $result: math.div($px, $current) + rem;
+    @return $result;
+}
+
+@mixin ms($type, $value) {
+    @if $type == 'min' {
+        @media (min-width: $value) {
+            @content;
+        }
+    } @else if $type == 'max' {
+        @media (max-width: $value) {
+            @content;
+        }
+    }
+}

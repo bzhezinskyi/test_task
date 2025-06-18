@@ -1,0 +1,563 @@
+@charset "UTF-8";
+/* Скидання відступів, полів, бордерів */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Скидання стилів списків */
+nav,
+ul,
+ol {
+  list-style: none;
+}
+
+/* Скидання стилів посилань */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Скидання стилів для зображень */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Скидання стилів для кнопок */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+/* Скидання стилів для таблиць */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Скидання стилів для заголовків */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "AvenirNext";
+  src: url("/font/avenir-next/font/avenir-next/AvenirNextCyr-UltraLight.woff") format(woff);
+  src: url("/font/avenir-next/font/avenir-next/AvenirNextCyr-UltraLight.woff2") format(woff2);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("/font/avenir-next/font/avenir-next/AvenirNextCyr-Thin.woff") format(woff);
+  src: url("/font/avenir-next/font/avenir-next/AvenirNextCyr-Thin.woff2") format(woff2);
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("/font/avenir-next/font/avenir-next/AvenirNextCyr-Medium.woff") format(woff);
+  src: url("/font/avenir-next/font/avenir-next/AvenirNextCyr-Medium.woff2") format(woff2);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("/font/avenir-next/font/avenir-next/AvenirNextCyr-Regular.woff") format(woff);
+  src: url("/font/avenir-next/font/avenir-next/AvenirNextCyr-Regular.woff2") format(woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("/font/avenir-next/font/avenir-next/AvenirNextCyr-Bold.woff") format(woff);
+  src: url("/font/avenir-next/font/avenir-next/AvenirNextCyr-Bold.woff2") format(woff2);
+  font-style: normal;
+  font-weight: 600;
+}
+body {
+  font-family: "AvenirNext", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.625rem 1.125rem;
+  border-radius: 0.5rem;
+  border: 1px solid #2c2929;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover, .btn:focus {
+  background-color: #2c2929;
+  color: #ffffff;
+}
+.btn--dark {
+  background-color: #2c2929;
+  color: #ffffff;
+}
+.btn--dark:focus, .btn--dark:hover {
+  background-color: #ffffff;
+  color: #2c2929;
+}
+
+[class*=_container] {
+  margin: 0 auto;
+  max-width: 90rem;
+  padding: 1rem 1.25rem;
+}
+@media (min-width: 48rem) {
+  [class*=_container] {
+    padding: 0.75rem;
+  }
+}
+
+.header_top {
+  background-color: #2c2929;
+  color: #ffffff;
+  font-size: 0.9375rem;
+}
+.header_top_container {
+  display: flex;
+  justify-content: space-between;
+}
+.header_top-txt {
+  font-weight: 200;
+  font-style: normal;
+  margin-right: 0.5rem;
+  line-height: 1.25rem;
+}
+.header__bottom__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 6.875rem;
+  height: 0.8125rem;
+}
+@media (min-width: 20rem) {
+  .header__logo {
+    width: 8.125rem;
+    height: 1.125rem;
+  }
+}
+@media (min-width: 90rem) {
+  .header__logo {
+    width: 11.25rem;
+    height: 1.3125rem;
+  }
+}
+.header__logo-img {
+  width: 100%;
+}
+.rating {
+  min-width: 5.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+@media (min-width: 48rem) {
+  .rating {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.rating_list {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 48rem) {
+  .rating_list {
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+  }
+}
+.rating_item {
+  width: 1rem;
+}
+@media (min-width: 48rem) {
+  .rating_item {
+    width: 1.5rem;
+  }
+}
+.rating_img {
+  width: 100%;
+}
+.rating_txt {
+  width: 5.75rem;
+}
+@media (min-width: 26.5625rem) {
+  .rating_txt {
+    width: 6.125rem;
+  }
+}
+
+.control__list {
+  display: flex;
+}
+.control__item {
+  height: 1.625rem;
+  margin-right: 1rem;
+}
+.control__item:last-child {
+  margin-right: 0;
+}
+.control__btn {
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.control__btn:hover, .control__btn:focus {
+  border: 1px solid #2c2929;
+  background-color: #f0f0f0;
+}
+.control__img {
+  width: 100%;
+}
+@media (min-width: 64rem) {
+  .control__img--burger {
+    display: none;
+  }
+}
+.control__lang {
+  display: none;
+}
+@media (min-width: 64rem) {
+  .control__lang {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav {
+  display: none;
+}
+@media (min-width: 64rem) {
+  .nav {
+    display: block;
+  }
+}
+.nav__list {
+  display: flex;
+}
+.nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:hover, .nav__link:focus {
+  background-color: #2c2929;
+  color: #ffffff;
+}
+.nav__link:hover .nav__img, .nav__link:focus .nav__img {
+  display: none;
+}
+.nav__link:hover .nav__img--white, .nav__link:focus .nav__img--white {
+  display: block;
+}
+@media (min-width: 90rem) {
+  .nav__link {
+    margin-right: 2rem;
+  }
+  .nav__link :last-child {
+    margin-right: 0;
+  }
+}
+.nav__txt {
+  font-size: 0.75rem;
+}
+@media (min-width: 90rem) {
+  .nav__txt {
+    font-size: 1.125rem;
+  }
+}
+.nav__img {
+  margin-left: 0.5rem;
+  width: 1rem;
+}
+.nav__img--white {
+  display: none;
+  margin-left: 0.5rem;
+  width: 1rem;
+}
+
+.hero {
+  background-color: #f0f0f0;
+}
+@media (min-width: 64rem) {
+  .hero__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 64rem) {
+  .hero__content {
+    margin-top: 4.5rem;
+  }
+}
+.hero__title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.image {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.image__url {
+  position: absolute;
+  top: 0;
+}
+.image__link {
+  margin-bottom: 0.8125rem;
+}
+.image__link:hover, .image__link:focus {
+  text-decoration: underline;
+}
+.image__img {
+  margin: 0 auto;
+}
+@media (min-width: 64rem) {
+  .image__img {
+    width: 30rem;
+  }
+}
+@media (min-width: 90rem) {
+  .image__img {
+    width: 36rem;
+  }
+}
+.image__btn {
+  position: absolute;
+  background-color: rgba(44, 41, 41, 0.2392156863);
+  height: 2.125rem;
+  width: 2.125rem;
+  border-radius: 1.75rem;
+}
+@media (min-width: 64rem) {
+  .image__btn {
+    display: none;
+  }
+}
+.image__btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto;
+}
+.image__btn--left {
+  left: 0;
+  top: 50%;
+  transform: rotate(90deg);
+}
+.image__btn--right {
+  right: 0;
+  top: 50%;
+  transform: rotate(-90deg);
+}
+
+.photos {
+  position: relative;
+}
+@media (min-width: 64rem) {
+  .photos {
+    margin-right: 1.875rem;
+  }
+}
+@media (min-width: 90rem) {
+  .photos {
+    margin-right: 5.625rem;
+  }
+}
+.photos__list {
+  display: none;
+}
+@media (min-width: 64rem) {
+  .photos__list {
+    display: block;
+  }
+}
+.photos__item {
+  margin-bottom: 1.125rem;
+}
+.photos__img {
+  width: 6.375rem;
+}
+.photos__btn {
+  display: none;
+  position: absolute;
+  background-color: rgba(44, 41, 41, 0.2392156863);
+  height: 2.125rem;
+  width: 2.125rem;
+  border-radius: 1.75rem;
+}
+@media (min-width: 64rem) {
+  .photos__btn {
+    display: block;
+  }
+}
+.photos__btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto;
+}
+.photos__btn--left {
+  left: 50%;
+  top: -1.875rem;
+  transform: rotate(180deg) translate(50%);
+}
+.photos__btn--right {
+  left: 50%;
+  bottom: -1.875rem;
+  transform: translateX(-50%);
+}
+
+.color__list {
+  display: flex;
+}
+.color__item {
+  margin-right: 0.5rem;
+}
+.color__item:last-child {
+  margin-right: 0;
+}
+.color__btn {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1.25rem;
+  border: 2px solid transparent;
+}
+.color__btn:hover, .color__btn:focus {
+  border-color: #2c2929;
+}
+.color__img {
+  height: 100%;
+  border-radius: 1.25rem;
+}
+
+.params__title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
+}
+.params__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.params__item {
+  margin-right: 0.625rem;
+}
+.params__item:first-child {
+  margin-bottom: 0.625rem;
+}
+.params__btn {
+  padding: 0.625rem 1.125rem;
+  border-radius: 0.5rem;
+  border: 1px solid #2c2929;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.params__btn:hover, .params__btn:focus {
+  background-color: #2c2929;
+  color: #ffffff;
+}
+
+.pay {
+  margin-top: 1.875rem;
+}
+.pay__row {
+  display: flex;
+  margin-bottom: 1.125rem;
+  align-items: end;
+}
+.pay__row--last {
+  align-items: center;
+}
+.pay__curent-btn {
+  font-size: 1.125rem;
+  margin-right: 2.75rem;
+}
+@media (min-width: 48rem) {
+  .pay__curent-btn {
+    display: none;
+  }
+}
+.pay__curent-btn--tab {
+  display: none;
+  margin-right: 0.625rem;
+}
+@media (min-width: 48rem) {
+  .pay__curent-btn--tab {
+    display: block;
+  }
+}
+.pay__sum {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.pay__notsale {
+  color: rgba(44, 41, 41, 0.2392156863);
+  text-decoration: line-through;
+}
+.pay__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.625rem;
+  min-width: 17.6875rem;
+  padding: 0.5625rem;
+}
+.pay__btn-icon {
+  margin-right: 0.625rem;
+}
+.pay__like {
+  padding: 0.5625rem;
+}
+.pay__like-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.pay__comment {
+  display: flex;
+  align-items: center;
+  margin-right: 0.625rem;
+  min-width: 13rem;
+}
+.pay__comment-icon {
+  margin-right: 0.625rem;
+}
+.pay__lorem {
+  font-weight: 200;
+}
+
+.delivery__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+.delivery__item:last-child {
+  margin-bottom: 0;
+}
+.delivery__icon {
+  margin-right: 0.625rem;
+}/*# sourceMappingURL=style.css.map */

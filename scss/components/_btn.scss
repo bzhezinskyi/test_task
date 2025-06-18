@@ -1,0 +1,20 @@
+.btn {
+    padding: toRem(10) toRem(18);
+    border-radius: toRem(8);
+    border: 1px solid $primary-color;
+    transition: all 0.3s $cubic;
+    &:hover,
+    &:focus {
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+    &--dark {
+        background-color: $primary-color;
+        color: $secondary-color;
+        &:focus,
+        &:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
+    }
+}

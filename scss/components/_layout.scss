@@ -1,0 +1,9 @@
+[class*='_container'] {
+    margin: 0 auto;
+    max-width: $desc-m-min;
+    padding: toRem(16) toRem(20);
+
+    @media (min-width: $tab-min) {
+        padding: toRem(12);
+    }
+}

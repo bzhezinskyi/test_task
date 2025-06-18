@@ -1,0 +1,22 @@
+// Кольори
+$primary-color: #2c2929;
+$secondary-color: #ffffff;
+$success-color: #f0f0f0;
+$btn-color: #2c29293d;
+
+$mob-s-min: toRem(320);
+$mob-s-max: toRem(375.9);
+$mob-m-min: toRem(376);
+$mob-m-max: toRem(424.9);
+$mob-l-min: toRem(425);
+$mob-l-max: toRem(767.9);
+
+$tab-min: toRem(768);
+$tab-max: toRem(1023.9);
+
+$desc-s-min: toRem(1024);
+$desc-s-max: toRem(1439.9);
+$desc-m-min: toRem(1440);
+
+// Анімації
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);

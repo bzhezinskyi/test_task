@@ -1,0 +1,56 @@
+/* Скидання відступів, полів, бордерів */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Скидання стилів списків */
+nav,
+ul,
+ol {
+    list-style: none;
+}
+
+/* Скидання стилів посилань */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Скидання стилів для зображень */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Скидання стилів для кнопок */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+}
+
+/* Скидання стилів для таблиць */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Скидання стилів для заголовків */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
