@@ -1,0 +1,44 @@
+.partners {
+    &__container {
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: toRem(54);
+        @media (min-width: $desc-s-min) {
+            margin-bottom: toRem(44);
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: toRem(24);
+        font-weight: 500;
+        margin-bottom: toRem(36);
+        @media (min-width: $desc-s-min) {
+            font-size: toRem(26);
+            margin-bottom: toRem(52);
+        }
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        animation: marquee 30s linear infinite;
+    }
+    &__item {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        margin-right: toRem(50);
+        width: toRem(100);
+        @media (min-width: $desc-s-min) {
+            width: toRem(180);
+            margin-right: toRem(30);
+        }
+    }
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    } // -50% якщо список продубльовано
+}

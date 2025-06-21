@@ -1,47 +1,52 @@
 @font-face {
     font-family: 'AvenirNext';
-    src: url('/font/avenir-next/font/avenir-next/AvenirNextCyr-UltraLight.woff')
-        format(woff);
-    src: url('/font/avenir-next/font/avenir-next/AvenirNextCyr-UltraLight.woff2')
-        format(woff2);
+    src: url('../font/avenir-next/AvenirNextCyr-Thin.woff') format(woff);
+    src: url('../font/avenir-next/AvenirNextCyr-Thin.woff2') format(woff2);
     font-style: normal;
     font-weight: 100;
 }
 @font-face {
     font-family: 'AvenirNext';
-    src: url('/font/avenir-next/font/avenir-next/AvenirNextCyr-Thin.woff')
-        format(woff);
-    src: url('/font/avenir-next/font/avenir-next/AvenirNextCyr-Thin.woff2')
-        format(woff2);
+    src: url('../font/avenir-next/AvenirNextCyr-UltraLight.woff') format(woff);
+    src: url('../font/avenir-next/AvenirNextCyr-UltraLight.woff2') format(woff2);
     font-style: normal;
     font-weight: 200;
 }
 @font-face {
     font-family: 'AvenirNext';
-    src: url('/font/avenir-next/font/avenir-next/AvenirNextCyr-Medium.woff')
-        format(woff);
-    src: url('/font/avenir-next/font/avenir-next/AvenirNextCyr-Medium.woff2')
-        format(woff2);
+    src: url('../font/avenir-next/AvenirNextCyr-Light.woff') format(woff);
+    src: url('../font/avenir-next/AvenirNextCyr-Light.woff2') format(woff2);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
 }
+
 @font-face {
     font-family: 'AvenirNext';
-    src: url('/font/avenir-next/font/avenir-next/AvenirNextCyr-Regular.woff')
-        format(woff);
-    src: url('/font/avenir-next/font/avenir-next/AvenirNextCyr-Regular.woff2')
-        format(woff2);
+    src: url('../font/avenir-next/AvenirNextCyr-Regular.woff') format(woff);
+    src: url('../font/avenir-next/AvenirNextCyr-Regular.woff2') format(woff2);
     font-style: normal;
     font-weight: 400;
 }
 @font-face {
     font-family: 'AvenirNext';
-    src: url('/font/avenir-next/font/avenir-next/AvenirNextCyr-Bold.woff')
-        format(woff);
-    src: url('/font/avenir-next/font/avenir-next/AvenirNextCyr-Bold.woff2')
-        format(woff2);
+    src: url('../font/avenir-next/AvenirNextCyr-Medium.woff') format(woff);
+    src: url('../font/avenir-next/AvenirNextCyr-Medium.woff2') format(woff2);
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('../font/avenir-next/AvenirNextCyr-Demi.woff') format(woff);
+    src: url('../font/avenir-next/AvenirNextCyr-Demi.woff2') format(woff2);
     font-style: normal;
     font-weight: 600;
+}
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('../font/avenir-next/AvenirNextCyr-Bold.woff') format(woff);
+    src: url('../font/avenir-next/AvenirNextCyr-Bold.woff2') format(woff2);
+    font-style: normal;
+    font-weight: 700;
 }
 
 body {

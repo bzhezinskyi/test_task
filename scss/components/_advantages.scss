@@ -1,0 +1,83 @@
+.advantages {
+    &__container {
+        margin-bottom: toRem(40);
+        @media (min-width: $desc-s-min) {
+            margin-bottom: toRem(90);
+        }
+    }
+    &__list {
+        @media (min-width: $desc-s-min) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        margin-bottom: toRem(24);
+        :last-child {
+            margin-bottom: toRem(0);
+        }
+        @media (min-width: $desc-s-min) {
+            flex: 0 0 50%;
+            max-width: calc(50% - 10px);
+            align-items: stretch;
+            min-height: toRem(336);
+            margin-bottom: toRem(20);
+            &:nth-last-child(-n + 2) {
+                margin-bottom: 0;
+            }
+            &:nth-child(odd) {
+                margin-right: toRem(20);
+            }
+        }
+    }
+    &__card {
+        height: 100%;
+        position: relative;
+        padding: toRem(24) toRem(28);
+        border-radius: toRem(12);
+        overflow: hidden;
+        @media (min-width: $desc-s-min) {
+            max-width: toRem(700);
+        }
+        &--gray {
+            background-color: #e5e4dd;
+        }
+        &--yellow {
+            background-color: #fffad9;
+        }
+        &--green {
+            background-color: #dbece0;
+        }
+        &--pink {
+            background-color: #fae0e1;
+        }
+    }
+    &__icon {
+        margin-bottom: toRem(18);
+        @media (min-width: $desc-s-min) {
+            margin-bottom: toRem(30);
+        }
+    }
+    &__title {
+        margin-bottom: toRem(14);
+        font-size: toRem(32);
+        font-weight: 600;
+    }
+    &__txt {
+        font-size: toRem(20);
+        margin-right: toRem(45);
+    }
+    &__btn {
+        position: relative;
+        margin-top: toRem(24);
+        font-weight: 500;
+        z-index: 2;
+    }
+    &__img {
+        position: absolute;
+        right: toRem(-25);
+        bottom: toRem(-13);
+        height: toRem(206);
+        transform: scaleX(-1);
+    }
+}

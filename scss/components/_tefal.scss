@@ -1,0 +1,16 @@
+.tefal {
+    @media (min-width: $tab-min) {
+        display: none;
+    }
+    &__container {
+        margin-bottom: toRem(40);
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: toRem(20);
+        font-size: toRem(32);
+    }
+    &__txt {
+        font-size: toRem(17);
+    }
+}

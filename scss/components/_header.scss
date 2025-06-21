@@ -1,10 +1,10 @@
 .header {
-    &_top {
+    &__top {
         background-color: $primary-color;
         color: $secondary-color;
         font-size: toRem(15);
 
-        &_container {
+        &__container {
             display: flex;
             justify-content: space-between;
         }
@@ -13,8 +13,6 @@
             font-style: normal;
             margin-right: toRem(8);
             line-height: toRem(20);
-        }
-        &-rating {
         }
     }
     &__bottom {
@@ -38,8 +36,6 @@
         &-img {
             width: 100%;
         }
-    }
-    &_control {
     }
 }
 .rating {
@@ -88,11 +84,12 @@
         }
     }
     &__btn {
+        cursor: pointer;
         border: 1px solid transparent;
         border-radius: toRem(4);
+        transition: all 0.3s $cubic;
         &:hover,
         &:focus {
-            border: 1px solid $primary-color;
             background-color: $success-color;
         }
     }
@@ -124,8 +121,7 @@
     &__list {
         display: flex;
     }
-    &__item {
-    }
+
     &__link {
         display: flex;
         align-items: center;
@@ -137,12 +133,6 @@
         &:focus {
             background-color: $primary-color;
             color: $secondary-color;
-            & .nav__img {
-                display: none;
-            }
-            & .nav__img--white {
-                display: block;
-            }
         }
         @media (min-width: $desc-m-min) {
             margin-right: toRem(32);
@@ -156,14 +146,10 @@
         @media (min-width: $desc-m-min) {
             font-size: toRem(18);
         }
-    }
-    &__img {
-        margin-left: toRem(8);
-        width: toRem(16);
-        &--white {
-            display: none;
+        &-icon {
             margin-left: toRem(8);
             width: toRem(16);
+            height: toRem(16);
         }
     }
 }

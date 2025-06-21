@@ -17,8 +17,6 @@
 
         margin-bottom: toRem(32);
     }
-    &__txt {
-    }
 }
 
 .image {
@@ -118,10 +116,6 @@
         }
     }
 }
-.details {
-    &__color {
-    }
-}
 .color {
     &__list {
         display: flex;
@@ -138,7 +132,8 @@
         border-radius: toRem(20);
         border: 2px solid transparent;
         &:hover,
-        &:focus {
+        &:focus,
+        &.active {
             border-color: $primary-color;
         }
     }
@@ -164,12 +159,7 @@
         }
     }
     &__btn {
-        padding: toRem(10) toRem(18);
-        border-radius: toRem(8);
-        border: 1px solid $primary-color;
-        transition: all 0.3s $cubic;
-        &:hover,
-        &:focus {
+        &.active {
             background-color: $primary-color;
             color: $secondary-color;
         }
@@ -185,17 +175,35 @@
             align-items: center;
         }
     }
-    &__curent-btn {
-        font-size: toRem(18);
+    &__counter {
         margin-right: toRem(44);
-        @media (min-width: $tab-min) {
+        border-radius: toRem(8);
+        border: 1px solid $primary-color;
+        transition: all 0.3s $cubic;
+        @media (min-width: $desc-m-min) {
             display: none;
         }
-        &--tab {
+        &--desc {
             display: none;
             margin-right: toRem(10);
-            @media (min-width: $tab-min) {
+            @media (min-width: $desc-m-min) {
                 display: block;
+            }
+        }
+
+        &-value {
+            margin: 0 toRem(1);
+        }
+        &-btn {
+            border-radius: toRem(6);
+            padding: toRem(10) toRem(18);
+            font-size: toRem(18);
+
+            cursor: pointer;
+            &:hover,
+            &:focus {
+                background-color: $primary-color;
+                color: $secondary-color;
             }
         }
     }
@@ -214,12 +222,16 @@
         margin-right: toRem(10);
         min-width: toRem(283);
         padding: toRem(9);
+        height: toRem(46);
+
         &-icon {
             margin-right: toRem(10);
         }
     }
     &__like {
         padding: toRem(9);
+        height: toRem(46);
+        width: toRem(46);
         &-icon {
             width: toRem(24);
             height: toRem(24);
@@ -239,8 +251,6 @@
     }
 }
 .delivery {
-    &__list {
-    }
     &__item {
         display: flex;
         align-items: center;
@@ -251,7 +261,5 @@
     }
     &__icon {
         margin-right: toRem(10);
-    }
-    &__txt {
     }
 }

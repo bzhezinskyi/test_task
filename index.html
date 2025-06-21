@@ -8,46 +8,46 @@
     </head>
     <body>
         <header class="header">
-            <div class="header_top">
-                <div class="header_top_container">
-                    <span class="header_top-txt">
+            <div class="header__top">
+                <div class="header__top__container">
+                    <span class="header__top-txt">
                         Gratis bezorging & montage vanaf € 275,- in Nederland &
                         Belgie
                     </span>
-                    <div class="header_top-rating rating">
+                    <div class="header__top-rating rating">
                         <ul class="rating_list">
                             <li class="rating_item">
                                 <img
                                     class="rating_img"
-                                    src="img/header/star.svg"
+                                    src="./img/header/star.svg"
                                     alt=""
                                 />
                             </li>
                             <li class="rating_item">
                                 <img
                                     class="rating_img"
-                                    src="img/header/star.svg"
+                                    src="./img/header/star.svg"
                                     alt=""
                                 />
                             </li>
                             <li class="rating_item">
                                 <img
                                     class="rating_img"
-                                    src="img/header/star.svg"
+                                    src="./img/header/star.svg"
                                     alt=""
                                 />
                             </li>
                             <li class="rating_item">
                                 <img
                                     class="rating_img"
-                                    src="img/header/star.svg"
+                                    src="./img/header/star.svg"
                                     alt=""
                                 />
                             </li>
                             <li class="rating_item">
                                 <img
                                     class="rating_img"
-                                    src="img/header/star.svg"
+                                    src="./img/header/star.svg"
                                     alt=""
                                 />
                             </li>
@@ -60,7 +60,7 @@
                 <div class="header__bottom__container">
                     <a href="/" class="header__logo">
                         <img
-                            src="img/header/logo.png"
+                            src="./img/logo.png"
                             alt="Logo"
                             class="header__logo-img"
                         />
@@ -72,16 +72,22 @@
                                     <span class="nav__txt">
                                         Kantoormeubelen
                                     </span>
-                                    <img
-                                        src="img/header/control/chevron_down.svg"
-                                        alt="chevron down"
-                                        class="nav__img"
-                                    />
-                                    <img
-                                        src="img/header/control/chevrone_down_white.svg"
-                                        alt="chevron down"
-                                        class="nav__img--white"
-                                    />
+                                    <svg
+                                        class="nav__txt-icon"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M19.5 8.25L12 15.75L4.5 8.25"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
                                 </a>
                             </li>
                             <li class="nav__item">
@@ -118,7 +124,7 @@
                             <li class="control__item">
                                 <button class="control__btn" type="button">
                                     <img
-                                        src="img/header/control/search.svg"
+                                        src="./img/header/control/search.svg"
                                         alt="search"
                                         class="control__img"
                                     />
@@ -127,7 +133,7 @@
                             <li class="control__item">
                                 <button class="control__btn" type="button">
                                     <img
-                                        src="img/header/control/heart.svg"
+                                        src="./img/header/control/heart.svg"
                                         alt="like"
                                         class="control__img"
                                     />
@@ -136,7 +142,7 @@
                             <li class="control__item">
                                 <button class="control__btn" type="button">
                                     <img
-                                        src="img/header/control/shop.svg"
+                                        src="./img/header/control/shop.svg"
                                         alt="shop"
                                         class="control__img"
                                     />
@@ -145,7 +151,7 @@
                             <li class="control__item">
                                 <button class="control__btn" type="button">
                                     <img
-                                        src="img/header/control/user.svg"
+                                        src="./img/header/control/user.svg"
                                         alt="user"
                                         class="control__img"
                                     />
@@ -154,14 +160,14 @@
                             <li class="control__item">
                                 <button class="control__btn" type="button">
                                     <img
-                                        src="img/header/control/burger.svg"
+                                        src="./img/header/control/burger.svg"
                                         alt="menu"
                                         class="control__img control__img--burger"
                                     />
                                     <div class="control__lang">
                                         <span>NL</span>
                                         <img
-                                            src="img/header/control/chevron_down.svg"
+                                            src="./img/header/control/chevron_down.svg"
                                             alt="chevron down"
                                             class="control__img control__img--chewron"
                                         />
@@ -197,53 +203,56 @@
                             <ul class="photos__list">
                                 <li class="photos__item">
                                     <img
-                                        src="img/hero/hero-1.png"
+                                        src="./img/hero/hero-1.png"
                                         alt=""
                                         class="photos__img"
+                                        data-src="./img/hero/hero-1.png"
                                     />
                                 </li>
                                 <li class="photos__item">
                                     <img
-                                        src="img/hero/hero-2.png"
+                                        src="./img/hero/hero-2.png"
                                         alt=""
                                         class="photos__img"
+                                        data-src="./img/hero/hero-2.png"
                                     />
                                 </li>
                                 <li class="photos__item">
                                     <img
-                                        src="img/hero/hero-3.png"
+                                        src="./img/hero/hero-3.png"
                                         alt=""
                                         class="photos__img"
+                                        data-src="./img/hero/hero-3.png"
                                     />
                                 </li>
                             </ul>
                             <button class="photos__btn photos__btn--left">
                                 <img
-                                    src="img/hero/chevrone_down_white.svg"
+                                    src="./img/hero/chevrone_down_white.svg"
                                     alt=""
                                 />
                             </button>
                             <button class="photos__btn photos__btn--right">
                                 <img
-                                    src="img/hero/chevrone_down_white.svg"
+                                    src="./img/hero/chevrone_down_white.svg"
                                     alt=""
                                 />
                             </button>
                         </div>
                         <img
-                            src="img/hero/hero-1.png"
+                            src="./img/hero/hero-1.png"
                             alt=""
                             class="image__img"
                         />
                         <button class="image__btn image__btn--left">
                             <img
-                                src="img/hero/chevrone_down_white.svg"
+                                src="./img/hero/chevrone_down_white.svg"
                                 alt=""
                             />
                         </button>
                         <button class="image__btn image__btn--right">
                             <img
-                                src="img/hero/chevrone_down_white.svg"
+                                src="./img/hero/chevrone_down_white.svg"
                                 alt=""
                             />
                         </button>
@@ -256,142 +265,243 @@
                         <div class="hero__details details">
                             <ul class="details__color color__list">
                                 <li class="color__item">
-                                    <button type="button" class="color__btn">
+                                    <button
+                                        type="button"
+                                        class="color__btn active"
+                                        data-prise="0"
+                                    >
                                         <img
-                                            src="img/hero/color/color-1.png"
+                                            src="./img/hero/color/color-1.png"
                                             alt="color"
                                             class="color__img"
                                         />
                                     </button>
                                 </li>
                                 <li class="color__item">
-                                    <button type="button" class="color__btn">
+                                    <button
+                                        type="button"
+                                        class="color__btn"
+                                        data-prise="10"
+                                    >
                                         <img
-                                            src="img/hero/color/color-2.png"
+                                            src="./img/hero/color/color-2.png"
                                             alt="color"
                                             class="color__img"
                                         />
                                     </button>
                                 </li>
                                 <li class="color__item">
-                                    <button type="button" class="color__btn">
+                                    <button
+                                        type="button"
+                                        class="color__btn"
+                                        data-prise="10"
+                                    >
                                         <img
-                                            src="img/hero/color/color-3.png"
+                                            src="./img/hero/color/color-3.png"
                                             alt="color"
                                             class="color__img"
                                         />
                                     </button>
                                 </li>
                                 <li class="color__item">
-                                    <button type="button" class="color__btn">
+                                    <button
+                                        type="button"
+                                        class="color__btn"
+                                        data-prise="10"
+                                    >
                                         <img
-                                            src="img/hero/color/color-4.png"
+                                            src="./img/hero/color/color-4.png"
                                             alt="color"
                                             class="color__img"
                                         />
                                     </button>
                                 </li>
                                 <li class="color__item">
-                                    <button type="button" class="color__btn">
+                                    <button
+                                        type="button"
+                                        class="color__btn"
+                                        data-prise="20"
+                                    >
                                         <img
-                                            src="img/hero/color/color-5.png"
+                                            src="./img/hero/color/color-5.png"
                                             alt="color"
                                             class="color__img"
                                         />
                                     </button>
                                 </li>
                                 <li class="color__item">
-                                    <button type="button" class="color__btn">
+                                    <button
+                                        type="button"
+                                        class="color__btn"
+                                        data-prise="30"
+                                    >
                                         <img
-                                            src="img/hero/color/color-6.png"
+                                            src="./img/hero/color/color-6.png"
                                             alt="color"
                                             class="color__img"
                                         />
                                     </button>
                                 </li>
                             </ul>
-                            <div class="details__params params">
+                            <div class="details__params params size__params">
                                 <h2 class="params__title">Afmeting</h2>
                                 <ul class="params__list">
                                     <li class="params__item">
-                                        <button class="params__btn">
+                                        <button
+                                            class="params__btn btn active"
+                                            data-prise="0"
+                                        >
                                             120 x 80
                                         </button>
                                     </li>
                                     <li class="params__item">
-                                        <button class="params__btn">
+                                        <button
+                                            class="params__btn btn"
+                                            data-prise="10"
+                                        >
                                             140 x 80
                                         </button>
                                     </li>
                                     <li class="params__item">
-                                        <button class="params__btn">
+                                        <button
+                                            class="params__btn btn"
+                                            data-prise="20"
+                                        >
                                             160 x 80
                                         </button>
                                     </li>
                                     <li class="params__item">
-                                        <button class="params__btn">
+                                        <button
+                                            class="params__btn btn"
+                                            data-prise="30"
+                                        >
                                             180 x 80
                                         </button>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="details__params params">
+                            <div class="details__params params frame__params">
                                 <h2 class="params__title">Frame</h2>
                                 <ul class="params__list">
                                     <li class="params__item">
-                                        <button class="params__btn">
+                                        <button
+                                            class="params__btn btn active"
+                                            data-prise="0"
+                                        >
                                             Aluminium
                                         </button>
                                     </li>
                                     <li class="params__item">
-                                        <button class="params__btn">
+                                        <button
+                                            class="params__btn btn"
+                                            data-prise="10"
+                                        >
                                             Zwart
                                         </button>
                                     </li>
                                     <li class="params__item">
-                                        <button class="params__btn">Wit</button>
+                                        <button
+                                            class="params__btn btn"
+                                            data-prise="20"
+                                        >
+                                            Wit
+                                        </button>
                                     </li>
                                 </ul>
                             </div>
                             <div class="hero__pay pay">
                                 <div class="pay__row">
-                                    <button class="pay__curent-btn btn">
-                                        - 1 +
-                                    </button>
+                                    <div class="pay__counter">
+                                        <button
+                                            class="pay__counter-btn counter--minus"
+                                        >
+                                            -
+                                        </button>
+                                        <span class="pay__counter-value">
+                                            1
+                                        </span>
+                                        <button
+                                            class="pay__counter-btn counter--plus"
+                                        >
+                                            +
+                                        </button>
+                                    </div>
                                     <span class="pay__sum">€300,00</span>
                                     <span class="pay__notsale">€365,00</span>
                                 </div>
                                 <div class="pay__row">
-                                    <button
-                                        class="pay__curent-btn pay__curent-btn--tab btn"
+                                    <div
+                                        class="pay__counter pay__counter--desc"
                                     >
-                                        - 1 +
-                                    </button>
+                                        <button
+                                            class="pay__counter-btn counter--minus"
+                                        >
+                                            -
+                                        </button>
+                                        <span class="pay__counter-value">
+                                            1
+                                        </span>
+                                        <button
+                                            class="pay__counter-btn counter--plus"
+                                        >
+                                            +
+                                        </button>
+                                    </div>
                                     <button class="pay__btn btn btn--dark">
-                                        <img
-                                            src="img/hero/icon/icon.svg"
-                                            alt=""
+                                        <svg
                                             class="pay__btn-icon"
-                                        />
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            fill="none"
+                                        >
+                                            <path
+                                                stroke="currentColor"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="1.5"
+                                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437m0 0a60.114 60.114 0 0 1 16.536 1.84 59.585 59.585 0 0 1-2.924 7.138H7.5M5.106 5.272 7.5 14.25m0 0a3 3 0 0 0-3 3h15.75M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                                            />
+                                        </svg>
                                         <span class="pay__btn-txt">
                                             In winkelwagen
                                         </span>
                                     </button>
                                     <button class="pay__like btn">
-                                        <img
+                                        <svg
                                             class="pay__like-icon"
-                                            src="img/hero/icon/wishlist.svg"
-                                            alt=""
-                                        />
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            fill="none"
+                                        >
+                                            <path
+                                                stroke="currentColor"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="1.5"
+                                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                                            />
+                                        </svg>
                                     </button>
                                 </div>
                                 <div class="pay__row pay__row--last">
                                     <button class="pay__comment btn">
-                                        <img
-                                            src="img/hero/icon/message-square.svg"
-                                            alt=""
+                                        <svg
                                             class="pay__comment-icon"
-                                        />
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            fill="none"
+                                        >
+                                            <path
+                                                stroke="currentColor"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="1.5"
+                                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"
+                                            />
+                                        </svg>
                                         <span class="pay__comment-txt">
                                             Offerte aanvragen
                                         </span>
@@ -564,8 +674,483 @@
                     </div>
                 </div>
             </section>
+            <section class="discover">
+                <div class="discover__container">
+                    <h2 class="discover__title">
+                        Voor een complete kantoorinrichting. Ontdek naast
+                        stoelen en bureaus ook kantoorkasten bij
+                        Office-Interior. Complete kantooroplossingen door
+                        ervaren projectmanagers.
+                    </h2>
+                    <div class="discover__content">
+                        <div class="discover__image">
+                            <img
+                                src="img/discover/discover-big.png"
+                                alt=""
+                                class="discover__img discover__img--big"
+                            />
+                            <img
+                                src="img/discover/discover-small.png"
+                                alt=""
+                                class="discover__img discover__img--small"
+                            />
+                        </div>
+                        <div class="discover__box">
+                            <span class="discover__txt">
+                                Hier vindt u alles voor uw kantoor
+                            </span>
+                            <button class="discover__btn btn">
+                                Meer ontdekken
+                                <svg
+                                    class="discover__btn-icon"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M4.5 19.5L19.5 4.5M19.5 4.5H8.25M19.5 4.5V15.75"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <seclion class="tefal">
+                <div class="tefal__container">
+                    <h2 class="tefal__title">Een tafel voor elke smaak</h2>
+                    <p class="tefal__txt">
+                        Je kunt een tafel kiezen op basis van maximale hoogte,
+                        gewicht, mechanisme en andere parameters
+                        <br />
+                        <br />
+                        Veeg naar links/rechts om tabbladen te vergelijken
+                    </p>
+                </div>
+            </seclion>
+            <section class="advantages">
+                <div class="advantages__container">
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <div
+                                class="advantages__card advantages__card--gray"
+                            >
+                                <img
+                                    src="./img/advantages/Frame.svg"
+                                    alt=""
+                                    class="advantages__icon"
+                                />
+                                <h2 class="advantages__title">
+                                    Informatie of een offerte op maat
+                                </h2>
+                                <p class="advantages__txt">
+                                    Wilt u informatie over de tafel of de prijs
+                                    voor uw organisatie? Laat je gegevens achter
+                                    en onze manager belt je terug. We helpen je
+                                    graag verder.
+                                </p>
+                                <button class="advantages__btn btn">
+                                    Verzoek achterlaten
+                                </button>
+                                <img
+                                    src="./img/advantages/advantages.png"
+                                    alt=""
+                                    class="advantages__img"
+                                />
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div
+                                class="advantages__card advantages__card--yellow"
+                            >
+                                <img
+                                    src="./img/advantages/Deliver.svg"
+                                    alt=""
+                                    class="advantages__icon"
+                                />
+                                <h2 class="advantages__title">
+                                    Snelle levering
+                                </h2>
+                                <p class="advantages__txt">
+                                    Uw bestelling wordt binnen 5 werkdagen
+                                    bezorgd door één van onze vaste eigen
+                                    chauffeurs. Wel zo prettig!
+                                </p>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div
+                                class="advantages__card advantages__card--green"
+                            >
+                                <img
+                                    src="./img/advantages/Design.svg"
+                                    alt=""
+                                    class="advantages__icon"
+                                />
+                                <h2 class="advantages__title">
+                                    Design & Ergonomie
+                                </h2>
+                                <p class="advantages__txt">
+                                    Makkelijke toepassingen, geweldige
+                                    gebruikerservaring en een modern design
+                                    staan centraal in onze
+                                    productontwikkelingen.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="advantages__item">
+                            <div
+                                class="advantages__card advantages__card--pink"
+                            >
+                                <img
+                                    src="./img/advantages/Guarantee.svg"
+                                    alt=""
+                                    class="advantages__icon"
+                                />
+                                <h2 class="advantages__title">
+                                    3 jaar garantie
+                                </h2>
+                                <p class="advantages__txt">
+                                    Wij zijn overtuigd van de kwaliteit die we
+                                    leveren, daarom kunt u een garantieperiode
+                                    van minimaal 3 jaar van ons verwachten.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="partners">
+                <div class="partners__container">
+                    <h2 class="partners__title">Onze klanten</h2>
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <img
+                                src="./img/partners/partners-1.svg"
+                                alt=""
+                                class="partners__img"
+                            />
+                        </li>
+                        <li class="partners__item">
+                            <img
+                                src="./img/partners/partners-2.svg"
+                                alt=""
+                                class="partners__img"
+                            />
+                        </li>
+                        <li class="partners__item">
+                            <img
+                                src="./img/partners/partners-3.svg"
+                                alt=""
+                                class="partners__img"
+                            />
+                        </li>
+                        <li class="partners__item">
+                            <img
+                                src="./img/partners/partners-4.svg"
+                                alt=""
+                                class="partners__img"
+                            />
+                        </li>
+                        <li class="partners__item">
+                            <img
+                                src="./img/partners/partners-5.svg"
+                                alt=""
+                                class="partners__img"
+                            />
+                        </li>
+                        <li class="partners__item">
+                            <img
+                                src="./img/partners/partners-6.svg"
+                                alt=""
+                                class="partners__img"
+                            />
+                        </li>
+                        <li class="partners__item">
+                            <img
+                                src="./img/partners/partners-7.svg"
+                                alt=""
+                                class="partners__img"
+                            />
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <a href="/" class="footer__logo">
+                        <img
+                            src="img/logo.png"
+                            alt=""
+                            class="footer__logo-img"
+                        />
+                    </a>
+                    <div class="footer__content">
+                        <div class="footer__newsletter newsletter">
+                            <h2 class="newsletter__title">Niewsbrief</h2>
+                            <p class="newsletter__txt">
+                                Schrijf u nu in voor de nieuwsbrief voor
+                                exclusieve informatie die u niet wil missen!
+                            </p>
+                            <form class="newsletter__form" action="">
+                                <input
+                                    type="text"
+                                    class="newsletter__input"
+                                    placeholder="Je e-mailadres@mail.com"
+                                />
+                                <button class="newsletter__btn">
+                                    <img
+                                        src="./img/footer/Frame.svg"
+                                        alt=""
+                                        class="newsletter__icon"
+                                    />
+                                </button>
+                            </form>
+                        </div>
+                        <div class="footer__links links">
+                            <div class="links__dropdown dropdown">
+                                <button type="button" class="dropdown__toggle">
+                                    Categorieën
+                                    <img
+                                        src="./img/footer/Vector.svg"
+                                        alt=""
+                                        class="dropdown__toggle-icon"
+                                    />
+                                </button>
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Kantoormeubelen
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Thuiswerkplek
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Kantoorinrichting
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Sale
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="links__dropdown dropdown">
+                                <button type="button" class="dropdown__toggle">
+                                    Over
+                                    <img
+                                        src="./img/footer/Vector.svg"
+                                        alt=""
+                                        class="dropdown__toggle-icon"
+                                    />
+                                </button>
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Over ons
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Veel gestelde vragen
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Contact
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Beoordelingen
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Privacybeleid
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Algemene voorwaarden
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Cookie Policy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="links__dropdown dropdown open">
+                                <button type="button" class="dropdown__toggle">
+                                    Info
+                                    <img
+                                        src="./img/footer/Vector.svg"
+                                        alt=""
+                                        class="dropdown__toggle-icon"
+                                    />
+                                </button>
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <a
+                                            class="dropdown__link"
+                                            href="tel:+310850481444"
+                                        >
+                                            <img
+                                                src="./img/footer/icon/phone.svg"
+                                                alt=""
+                                                class="dropdown__link-icon"
+                                            />
+                                            +31(0)85-0481444
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a
+                                            class="dropdown__link"
+                                            href="mailto:info@office-interior.nl"
+                                        >
+                                            <img
+                                                src="./img/footer/icon/mail.svg"
+                                                alt=""
+                                                class="dropdown__link-icon"
+                                            />
+                                            info@office-interior.nl
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            <img
+                                                src="./img/footer/icon/map.svg"
+                                                alt=""
+                                                class="dropdown__link-icon"
+                                            />
+                                            Nikkelstraat 284823AB Breda
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__social social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a
+                                    href="https://www.instagram.com/"
+                                    class="social__link"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="img/footer/social/instagram.svg"
+                                        alt=""
+                                        class="social__icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a
+                                    href="https://www.facebook.com/"
+                                    class="social__link"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="img/footer/social/facebook.svg"
+                                        alt=""
+                                        class="social__icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a
+                                    href="https://x.com/"
+                                    class="social__link"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="img/footer/social/twitter.svg"
+                                        alt=""
+                                        class="social__icon"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__paymets paymets">
+                        <ul class="paymets__list">
+                            <li class="paymets__item">
+                                <img
+                                    src="img/footer/payments/paymets-1.svg"
+                                    alt=""
+                                    class="paymets__icon"
+                                />
+                            </li>
+                            <li class="paymets__item">
+                                <img
+                                    src="img/footer/payments/paymets-2.svg"
+                                    alt=""
+                                    class="paymets__icon"
+                                />
+                            </li>
+                            <li class="paymets__item">
+                                <img
+                                    src="img/footer/payments/paymets-3.svg"
+                                    alt=""
+                                    class="paymets__icon"
+                                />
+                            </li>
+                            <li class="paymets__item">
+                                <img
+                                    src="img/footer/payments/paymets-4.svg"
+                                    alt=""
+                                    class="paymets__icon"
+                                />
+                            </li>
+                            <li class="paymets__item">
+                                <img
+                                    src="img/footer/payments/paymets-5.svg"
+                                    alt=""
+                                    class="paymets__icon"
+                                />
+                            </li>
+                            <li class="paymets__item">
+                                <img
+                                    src="img/footer/payments/paymets-6.svg"
+                                    alt=""
+                                    class="paymets__icon"
+                                />
+                            </li>
+                            <li class="paymets__item">
+                                <img
+                                    src="img/footer/payments/paymets-7.svg"
+                                    alt=""
+                                    class="paymets__icon"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                    &copy; 2023 Office-Interior
+                </div>
+            </div>
+        </footer>
+        <script src="js/partners.js"></script>
         <script src="js/show-more-btn.js"></script>
+        <script src="js/dropdown.js"></script>
+        <script src="js/prise.js"></script>
+        <script src="js/hero-image.js"></script>
     </body>
 </html>

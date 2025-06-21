@@ -1,0 +1,78 @@
+.discover {
+    &__title {
+        max-width: toRem(1075);
+        font-size: toRem(28);
+        margin-bottom: toRem(28);
+        @media (min-width: $desc-s-min) {
+            font-size: toRem(62);
+            margin-bottom: toRem(50);
+        }
+    }
+    &__content {
+        @media (min-width: $desc-s-min) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: end;
+        }
+    }
+    &__image {
+        position: relative;
+        margin-bottom: toRem(24);
+        height: 114vw;
+        max-width: toRem(624);
+        @media (min-width: $tab-min) {
+            height: toRem(714);
+            width: toRem(624);
+        }
+    }
+    &__img {
+        position: absolute;
+
+        border-radius: toRem(16);
+
+        object-fit: cover;
+        &--big {
+            top: 0;
+            right: 0;
+            height: clamp(toRem(362), 85%, toRem(674));
+            width: clamp(toRem(265), 80%, toRem(506));
+        }
+        &--small {
+            bottom: 0;
+            left: 0;
+            width: clamp(toRem(186), 55%, toRem(340));
+            height: clamp(toRem(233), 55%, toRem(425));
+            background-color: #f6f6f6;
+        }
+    }
+    &__box {
+        @media (min-width: $desc-s-min) {
+            margin-bottom: toRem(78);
+        }
+    }
+    &__txt {
+        display: block;
+        margin-bottom: toRem(24);
+        font-size: toRem(24);
+        font-weight: 400;
+        width: toRem(335);
+        @media (min-width: $desc-s-min) {
+            margin-bottom: toRem(30);
+            font-size: toRem(28);
+        }
+    }
+    &__btn {
+        display: flex;
+        padding: toRem(14) toRem(84);
+        font-size: toRem(17);
+        font-weight: 500;
+        @media (min-width: $desc-s-min) {
+            font-size: toRem(24);
+            padding: toRem(9) toRem(12);
+        }
+        &-icon {
+            margin-left: toRem(10);
+        }
+    }
+}
